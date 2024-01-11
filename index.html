@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Kraemling - Robotics Engineer</title>
+    <link rel = "stylesheet" href = "styling.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;800&family=Poppins:wght@100;200;300&family=Source+Code+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href = "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+<!-- Javascript -->
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+    
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+    
+                window.scrollTo({
+                    top: targetElement.offsetTop - header.offsetHeight, // Adjust for the fixed header
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+<!-- Header -->
+        <section class = "header">
+            <nav>
+                <a href="index.html"><img src="images/MoonOverLogo/Alexander Kraemling-logos_transparent_cropped.png"></a>
+                <div class="blurb">
+                    <h2>WPI Engineering Student</h2>
+                    <p>
+                        Highly motivated and detail-oriented Robotics/ Aerospace Engineer with experience in software design.
+                    </p>
+                </div>
+                <div class="nav-links" id = "navLinks">
+                    <ul>
+                        <li><a href="#ABOUT">ABOUT</a></li> <!-- Links -->
+                        <li><a href="#PROJECTS">PROJECTS</a></li>
+                        <li><a href="#EXPERIENCE">EXPERIENCE</a></li>
+                    </ul>
+                </div>
+                <div class="contactme">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p>Email: alexander.kraemling@gmail.com</p>
+                </div>
+            </nav>
+
+        </section>
+<!-- Rest Of Website -->
+    <div class="rightside">
+    <!-- About Me -->
+        <section class="aboutme" id="ABOUT">
+            <h2>ABOUT ME</h2>
+            <p>I'm an aspiring Robotics Engineer with a strong passion for technology and a determination to grow in the field. Here's a bit about me: </p>
+            <p>I started my programming journey using scratch as a kid, and since then I have been actively developing and improving my skills in 3D design and programming, learning softwares such as Sketchup, Civil 3D, Blender, Fusion360, and more, and also learning programming languages such as C, C#, C++, Python, and very newly html. </p>
+            <p>More recently, I have been focusing on developing physical games with hardware and software components, such as a microcontroller which plays simon says and a rover which can autonomously fling balls through hoops in a larger, more robot focused game.</p>
+            <p>Outside of personal projects and school, I can be found in the gym playing volleyball or at home trying to improve my so-far lackluster cooking skills.</p>
+            
+            <!-- <h4>Eager Learner:</h4>
+            <p>With a keen interest in staying current with industry trends and emerging technologies, I'm always excited to learn and adapt.</p>
+            
+            <h4>Team Player:</h4>
+            <p>I've had the valuable experience of working within several collaborative teams, including contributing to the drafts for a multi-billion dollar hospital project.</p>
+            
+            <h4>Pursuit of Excellence:</h4>
+            <p>I take my work seriously and am committed to delivering quality results, always striving to exceed expectations.</p>
+            
+            <p><br><br><br>I look forward to opportunities to further my journey in robotics and contribute to meaningful projects in the field.</p> -->
+        </section>
+
+        <!-- Projects -->
+        <section class="projects" id="PROJECTS">
+            <h2>PROJECTS</h2>
+        
+            <div class="proj">
+                <h6>Sept-PRESENT 2023</h6>
+                <div class="textt">
+                    <h2>Guitarhero on a Microcontroller</h2>
+                    <p>For this project, I used a MSP430 microcontroller to program and recreate the popular Guitarhero game. This was mainly completed in C, and required the use of a state machine and several of the ports on the microcontroller, in particular, the port for the buzzer, the LED's, and the buttons (all of which were used to either play the song with the LED fingering lighting up or to actually get the user's input). This project was very fulfilling, and I loved bringing a playable game to the real world.<br><br><br></p>
+                </div>
+                <h6>Aug-PRESENT 2023</h6>
+                <div class="textt">
+                    <h2>Take Me Out to the Ball Game Robot</h2>
+                    <p>For this project, I am currently working in a team with two others to build, program, and test a driving robot that can do a set amount of tasks for points, namely locate, grasp, and deposit balls through small holes in the wall autononmously. For this project we are using a camera to detect the position and color of balls around us, motors to control the bots movement, reflectance sensors to detect the colors on the floor boards to aid movement, and much more. We will be done with this project in roughly 3-4 weeks.<br><br><br></p>
+                </div>
+                <h6>Aug-Oct 2021</h6>
+                <div class="textt">
+                    <h2>$3.75 billion UC Davis Hospital Building</h2>
+                    <p>For this project, I mainly assisted by looking over, editing, and correcting draft plans for the building. In addition, I modelled and tested certain areas to check if they were up to regulation.</p>
+                </div>
+                <h6>Oct-Nov 2021</h6>
+                <div class="image-cont">
+                    <img src="images/PROPOSED (1).png">
+                    <img src="images/PROPOSED (2).png">
+                    <img src="images/PROPOSED.png">
+                </div>
+                <div class="textt">
+                    <h2>Complete Backyard Model</h2>
+                    <p>For this project, I was tasked to replicate the house of a client in SketchUp, and then implement the changes that the designer at the company was interested in making. This resulted in redoing the backyard of the house and creating a new deck and cabana area. We later sent this off to get approval from the clients. This work was mainly completed in Sketchup.</p>
+                </div>
+                
+        </section>
+
+        <!-- Experiences -->
+        <section class = "experience" id="EXPERIENCE">
+            <h2>EXPERIENCE</h2>
+        
+            <div class="col">
+                <div class="experience-col">
+                    <h6>Aug-Nov 2021</h6>
+                    <img src="images/Siegfriend-Engineering-facebook.jpg">
+                    <div class="layer">
+                        <h2>Siegfried Engineering</h2>
+                        <h3>Technician I Intern</h3>
+                        <p>Designed and produced construction documents using AutoCAD and Civil 3D software<br>
+                        Drafted and presented models for projects in Sketchup<br>
+                        Performed structural detailing in AutoCAD from Engineer design sketches using the companies standard details</p>
+                    </div>
+                </div>
+                <div class="experience-col">
+                    <h6>Mar-April 2022</h6>
+                    <img src="images/Frame_338.jpg">
+                    <div class="layer">
+                        <h2>Mindiff</h2>
+                        <h3>Videogame Assistant Intern</h3>
+                        <p>Programmed select character abilities<br>
+                        Play tested the game they were launching, Khosmium<br>
+                        Translated content from spanish to english
+                        </p>
+                    </div>
+                </div>
+                <div class="experience-col">
+                    <h6>June 2018-Aug 2021</h6>
+                    <img src="images/Mathnasium_learning_center.jpg">
+                    <div class="layer">
+                        <h2>Mathnasium Tutoring</h2>
+                        <h3>Math Tutor</h3>
+                        <p>Tutored students ages 5-15 in Math<br>
+                        Handled large groups of students<br>
+                        Learned and taught a given math curriculum</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

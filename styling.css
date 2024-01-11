@@ -1,0 +1,321 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.header {
+    position: fixed; /* Fixed position to keep it in place */
+    left: 0; /* Stick it to the left */
+    top: 0; /* Stick it to the top */
+    min-height: 100%;
+    width: 50%; /* Adjust the width as needed */
+    max-width: 80vh;
+    min-width: 10vh;
+    background-color: #e0c590; /* Background color of your header */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Add a shadow for better visibility */
+    z-index: 1000; /* Ensure it appears above other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    margin-top: -25vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2% 4%;
+    flex-direction: column;
+    height: 100%;
+}
+
+nav img{
+    width: 40vw;
+    max-width: 900px;
+    min-width: 300px;
+}
+
+.blurb {
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-top: -2%;
+}
+
+.blurb h2{
+    font-size: 14px;
+    color: #1b315a;
+    text-align: left;
+}
+.blurb p{
+    font-size: 12px;
+    color: #46577a;
+    text-align: left;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.nav-links ul li{
+    list-style: none;
+    padding: 20px 20px;
+    position: relative;
+    transition: padding-left 0.3s;
+    text-align: left;
+}
+
+.nav-links ul li::before{ 
+    content: '';
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 2px;
+    background: #9588a6;
+    transition: width 0.3s;
+}
+
+.nav-links ul li a{ 
+    color: #9588a6;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    font-size: 100%;
+    padding-left: 60px;
+    transition: padding-left 0.3s;
+}
+
+.nav-links ul li:hover::before{ 
+    width: 80px;
+    left: 10%;
+    background: #1b315a;
+}
+
+.nav-links ul li:hover a {
+    padding-left: 100px;
+    color: #1b315a;
+}
+
+.contactme{
+    margin-left: 15%;
+    margin-right: 10%;
+    bottom: 0;
+    color: #1b315a;
+}
+
+:root {
+    background-color: #e0c590;
+    --min-padding-left: 40vh; /* Define a minimum padding value */
+    --mid1-padding-left: 47.5vh;
+    --mid2-padding-left: 55vh;
+    --mid3-padding-left: 62.5vh;
+    --mid4-padding-left: 70vh;
+    --mid5-padding-left: 77.5vh;
+    --max-padding-left: 85vh; /* Define a maximum padding value */
+}
+
+.rightside {
+    padding-left: var(--min-padding-left); /* Use the minimum padding value as the default */
+    padding-right: 5vh;
+    margin-top: 20vh;
+    transition: padding 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+@media screen and (max-width: 599px) {
+    .rightside {
+        padding-left: var(--min-padding-left);
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 679px) {
+    .rightside {
+        padding-left: var(--mid1-padding-left);
+    }
+}
+
+@media screen and (min-width: 680px) and (max-width: 759px) {
+    .rightside {
+        padding-left: var(--mid2-padding-left);
+    }
+}
+
+@media screen and (min-width: 760px) and (max-width: 839px) {
+    .rightside {
+        padding-left: var(--mid3-padding-left);
+    }
+}
+
+@media screen and (min-width: 840px) and (max-width: 919px) {
+    .rightside {
+        padding-left: var(--mid4-padding-left);
+    }
+}
+
+@media screen and (min-width: 920px) and (max-width: 999px) {
+    .rightside {
+        padding-left: var(--mid5-padding-left);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .rightside {
+        padding-left: var(--max-padding-left);
+    }
+}
+
+
+/* Projects */
+
+/* .projects{
+
+}
+
+.proj{
+
+}
+
+.proj-col{
+
+} */
+
+.image-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Add some spacing around the images */
+}
+
+.image-cont img {
+    max-width: 30%; /* Adjust the image width as needed */
+    height: auto;
+    border: 2px solid #ccc; /* Add a border for separation */
+    border-radius: 8px; /* Add some rounded corners for style */
+}
+
+@media screen and (max-width: 768px) {
+    .image-cont {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center align images */
+    }
+    
+    .image-cont img {
+        max-width: 80%; /* Adjust the image width for smaller screens */
+        margin-bottom: 10px; /* Add spacing between stacked images */
+    }
+}
+
+/* .textt {
+
+} */
+
+/* Experiences */
+.experience{
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    padding-top: 10%;
+}
+
+.experience-col{
+    flex-basis: 32%;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-col img{
+    width: 70%;
+    display: block;
+}
+
+.experience-col h6{
+    font-size: 14px;
+}
+
+.layer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: transparent;
+    width: 70%;
+    height: 82.5%;
+    position: absolute;
+    margin-top: 9.2%;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: #1b315ad1;
+}
+
+.layer h2{
+    width: 60%;
+    margin-top: 5%;
+    font-weight: 500;
+    color: #e0c590;
+    bottom: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h2{
+    bottom: 0%;
+    opacity: 1;
+}
+.layer h3{
+    width: 60%;
+    font-weight: 500;
+    color: #a89a80;
+    font-size: 20px;
+    bottom: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 0%;
+    opacity: 1;
+}
+.layer p{
+    width: 60%;
+    font-weight: 500;
+    color: #e0c590;
+    font-size: 16px;
+    bottom: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover p{
+    bottom: 0%;
+    opacity: 1;
+}
+
+
